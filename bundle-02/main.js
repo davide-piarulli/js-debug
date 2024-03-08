@@ -54,23 +54,23 @@
 
 
 // ESERCIZIO 4
-function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+// function checkAccess() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = false;
+//     let grantAccess = false;
 
-    if (addresses.includes(userEmail)) {
-        grantAccess = true;
-    }
+//     if (addresses.includes(userEmail)) {
+//         grantAccess = true;
+//     }
 
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
-    }
-}
-checkAccess();
+//     if (grantAccess === true) {
+//         console.log('Accesso consentito!');
+//     } else {
+//         console.log('Accesso negato!');
+//     }
+// }
+// checkAccess();
 /**
  * la funzione controlla l'indirizzo mail scritto nel prompt con l'array di indirizzi già creato. Se presente, permette l'accesso, altrimenti no.
  * errore: il valore booleano true o false NON deve essere scritto come stringa, quindi senza apici.
@@ -78,33 +78,37 @@ checkAccess();
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
-// function checkAccessImproved() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+function checkAccessImproved() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = 'false';
 
-//     for (let i = 0; i < addresses.length; i++) {
-//         const email = addresses[i];
+    for (let i = 0; i < addresses.length; i++) {
+        const email = addresses[i];
 
-//         if (userEmail.length > 5) {
+        if (userEmail.length > 5) {
 
-//             if (email === userEmail) {
-//                 grantAccess = 'true';
+            if (email === userEmail) {
+                grantAccess = 'true';
 
-//             }
+            }
 
-//         }
+        }
 
-//         if (grantAccess) {
-//             console.log('Accesso consentito!');
-//         } else {
-//             console.log('Accesso negato!');
-//         }
-//     }
-//     checkAccessImproved();
-
+        if (grantAccess) {
+            console.log('Accesso consentito!');
+        } else {
+            console.log('Accesso negato!');
+        }
+    }
+}
+    checkAccessImproved();
+/**
+ * la funzione controlla l'indirizzo mail come il precedente, aggiungendo il controllo della lunghezza maggiore di 5 caratteri.
+ * errore: mancava la } finale della funzione
+ */
 
 
 
