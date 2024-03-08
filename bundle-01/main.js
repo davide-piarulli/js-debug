@@ -40,6 +40,7 @@ L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
 //     }
 // }
 /*
+* la funzione esegue un ciclo 5 volte
 * nella parentesi del for, i 3 parametri devono essere divisi dal ; e non dalla ,.
 */
 
@@ -58,6 +59,7 @@ function displayEvenNumbers() {
 }
 displayEvenNumbers(); 
 /**
+ * la funzione mostra i numeri pari e ad ogni ciclo li pusha nel nuovo array.
  * let to const
  * ; dopo il contatore va rimosso
  * nella condizione dell'IF numbers deve avere indice i
