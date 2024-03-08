@@ -40,13 +40,13 @@
  */
 
 // ESERCIZIO 3
-function addNumbers() {
-    const userNumber = parseInt(prompt('Inserisci un numero'));
-    const total = userNumber + 12;
+// function addNumbers() {
+//     const userNumber = parseInt(prompt('Inserisci un numero'));
+//     const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 /**
  * la funzione chiede un numero tramite un prompt e lo somma a 12.
  * errore: mancava il parseint nel prompt, non calcolava il prompt come numero.
@@ -54,23 +54,27 @@ addNumbers();
 
 
 // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+/**
+ * la funzione controlla l'indirizzo mail scritto nel prompt con l'array di indirizzi già creato. Se presente, permette l'accesso, altrimenti no.
+ * errore: il valore booleano true o false NON deve essere scritto come stringa, quindi senza apici.
+ */
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
