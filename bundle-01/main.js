@@ -11,30 +11,37 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
+// for (let i = 0; i <= 5; i++) {
+//     console.log(i);
+// }
 /*
 il ciclo fa 5 ripetizioni partendo da 0, fermandosi a 4. 
-L'errore di sintassi è nel i > 5 che deve essere i < 5.
+L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
 */
 
 
 // ESERCIZIO 2
 // function addIfEven(num) {
-//     if (num % 2 = 0) {
+//     if (num % 2 == 0) {
 //         return num + 5;
 //     }
 //     return num;
 // }
+/**
+ * la funzione fa la somma se il numero è pari, aggiunge 5 altrimenti restituisce il numero iniziale
+ * nella condizione dell'IF mancava il doppio uguale
+ */
 
 
 // // ESERCIZIO 3
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
-//     }
-// }
+function loopToFive() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
+/*
+* nella parentesi del for, i 3 parametri devono essere divisi dal ; e non dalla ,.
+*/
 
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
