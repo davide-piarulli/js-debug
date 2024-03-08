@@ -29,24 +29,28 @@
  */
 
 // ESERCIZIO 2
-function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
-}
-printColorsNumber();
+// function printColorsNumber() {
+//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+// }
+// printColorsNumber();
 /**
  * la funzione restituisce un log con il numero di colori del mio array
  * errore: length era scritto male
  */
 
 // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
+/**
+ * la funzione chiede un numero tramite un prompt e lo somma a 12.
+ * errore: mancava il parseint nel prompt, non calcolava il prompt come numero.
+ */
 
 
 // ESERCIZIO 4
