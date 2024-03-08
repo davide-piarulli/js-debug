@@ -83,7 +83,7 @@ function checkAccessImproved() {
 
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     for (let i = 0; i < addresses.length; i++) {
         const email = addresses[i];
@@ -91,7 +91,7 @@ function checkAccessImproved() {
         if (userEmail.length > 5) {
 
             if (email === userEmail) {
-                grantAccess = 'true';
+                grantAccess = true;
 
             }
 
@@ -107,7 +107,7 @@ function checkAccessImproved() {
     checkAccessImproved();
 /**
  * la funzione controlla l'indirizzo mail come il precedente, aggiungendo il controllo della lunghezza maggiore di 5 caratteri.
- * errore: mancava la } finale della funzione
+ * errore: mancava la } finale della funzione ed i valori booleani
  */
 
 

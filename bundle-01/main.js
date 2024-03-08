@@ -15,8 +15,8 @@
 //     console.log(i);
 // }
 /*
-il ciclo fa 5 ripetizioni partendo da 0, fermandosi a 4. 
-L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
+il ciclo fa 5 ripetizioni partendo da 0. 
+errore di sintassi: è nel i > 5 che deve essere i < o <= 5.
 */
 
 
@@ -29,7 +29,8 @@ L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
 // }
 /**
  * la funzione fa la somma se il numero è pari, aggiunge 5 altrimenti restituisce il numero iniziale
- * nella condizione dell'IF mancava il doppio uguale
+ * errore di sintassi: nella condizione dell'IF mancava il doppio uguale
+ * errore logico: la funzione non viene richiamata
  */
 
 
@@ -39,16 +40,18 @@ L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
 //         console.log(i);
 //     }
 // }
+// loopToFive();
 /*
 * la funzione esegue un ciclo 5 volte
 * nella parentesi del for, i 3 parametri devono essere divisi dal ; e non dalla ,.
+* errore logico: funzione non richiamata
 */
 
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 function displayEvenNumbers() {
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-    const evenNumbers = [];
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 == 0) {
             evenNumbers.push(numbers[i]);
@@ -60,9 +63,9 @@ function displayEvenNumbers() {
 displayEvenNumbers(); 
 /**
  * la funzione mostra i numeri pari e ad ogni ciclo li pusha nel nuovo array.
- * let to const
  * ; dopo il contatore va rimosso
  * nella condizione dell'IF numbers deve avere indice i
+ * anche il push deve avere numbers con indice i
  * nella condizione dell'IF bisogna rimuovere il - 1
  * nella condizione dell'IF ci devono essere 2 ==
  * ; dopo la condizione dell'IF va tolto

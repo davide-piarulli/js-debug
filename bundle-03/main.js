@@ -64,15 +64,11 @@ const cars = [
     }
 ];
 
-const gasolineCars = cars.filter( (auto) => auto.type = 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
-const dieselCars = cars.filter( (auto) => {
-   auto.type == 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type.toLowerCase() === 'diesel');
 
-const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' && auto.type !== 'diesel';
-});
+const otherCars = cars.filter( (auto) => auto.type.toLowerCase() !== 'benzina' && auto.type.toLowerCase() !== 'diesel');
 
 console.log('Auto a benzina');
 console.log('*******************************');
@@ -91,7 +87,7 @@ console.log(otherCars);
 * a riga 59 manca una virgola
 * a riga 64 bisogna togliere la virgola
 * a riga 67 arrow function era scritta male 
-* a riga 67 deve essere 1 =
-* a riga 70 deve essere 1 =
 * a riga 74 bisogna mettere && e non ||
+* sistemato la 2 e 3 arrow function
+* aggiunto il lowercase a auto type.
 */
