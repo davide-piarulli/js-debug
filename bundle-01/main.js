@@ -34,25 +34,35 @@ L'errore di sintassi è nel i > 5 che deve essere i < o <= 5.
 
 
 // // ESERCIZIO 3
-function loopToFive() {
-    for (let i = 0; i < 5; i++) {
-        console.log(i);
-    }
-}
+// function loopToFive() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//     }
+// }
 /*
 * nella parentesi del for, i 3 parametri devono essere divisi dal ; e non dalla ,.
 */
 
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-// function displayEvenNumbers() {
-//     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-//     let evenNumbers = [];
-//     for (let i = 0; i < numbers.length - 1; i++;) {
-//         if (numbers % 2 = 0); {
-//             evenNumbers.push(i);
-//         }
-//         return evenNumbers;
-//     }
-// }
-// displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+function displayEvenNumbers() {
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    const evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 == 0) {
+            evenNumbers.push(numbers[i]);
+        }
+    }
+    console.log(evenNumbers);// dovrebbe restituire [2,4,6,8]
+    return evenNumbers;
+}
+displayEvenNumbers(); 
+/**
+ * let to const
+ * ; dopo il contatore va rimosso
+ * nella condizione dell'IF numbers deve avere indice i
+ * nella condizione dell'IF bisogna rimuovere il - 1
+ * nella condizione dell'IF ci devono essere 2 ==
+ * ; dopo la condizione dell'IF va tolto
+ * il return deve andare fuori dal FOR
+ */
