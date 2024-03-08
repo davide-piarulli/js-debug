@@ -11,30 +11,33 @@
 
 
 // ESERCIZIO 1
-function checkAge() {
-    const myAge = 32;
-    let message = '';
+// function checkAge() {
+//     const myAge = 32;
+//     let message = '';
 
-    if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
-    } else {
-        message = 'Hai più di 18 anni!';
-    }
-    console.log(message);
-}
-checkAge();
+//     if (myAge < 18) {
+//         message = `Sei troppo giovane! Hai ${myAge} anni!`;
+//     } else {
+//         message = 'Hai più di 18 anni!';
+//     }
+//     console.log(message);
+// }
+// checkAge();
 /**
  * la funzione controlla l'età e stampa un messaggio
  * errori: message NON è const, ma LET
  */
 
 // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
-
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+}
+printColorsNumber();
+/**
+ * la funzione restituisce un log con il numero di colori del mio array
+ * errore: length era scritto male
+ */
 
 // ESERCIZIO 3
 // function addNumbers() {
