@@ -56,22 +56,22 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
         type: 'Benzina'
-    },
+    }
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type = 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+   auto.type == 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type !== 'benzina' && auto.type !== 'diesel';
 });
 
 console.log('Auto a benzina');
@@ -84,3 +84,14 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+
+/*
+* da un array di oggetti filtra tutte le auto che sono a benzina, diesel e tutte le altre auto e le divide in nuovi array
+* a riga 59 manca una virgola
+* a riga 64 bisogna togliere la virgola
+* a riga 67 arrow function era scritta male 
+* a riga 67 deve essere 1 =
+* a riga 70 deve essere 1 =
+* a riga 74 bisogna mettere && e non ||
+*/
